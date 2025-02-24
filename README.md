@@ -9,10 +9,12 @@ Setup
 4) On this Instance perform Installation
    
    git clone https://github.com/amathur2k/scrape2llm.git
+
    cd scrape2llm
+
    source install.sh
 
-5) edit the .env file to enter bedrock api access key
+6) edit the .env file to enter bedrock api access key
    
 Below command will take 5-10 minutes 
 
