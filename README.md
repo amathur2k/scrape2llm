@@ -16,8 +16,9 @@ Setup
 Below command will take 5-10 minutes
 6)  docker compose up --build
 
-8)  Open another terminal
-9)  cd scrape2llm
-10)  conda activate scrape2llm
-11)  python example.py
+7)  Open another terminal
+8)  cd scrape2llm
+9)  conda activate scrape2llm
+10) pip install -r requirements.txt  
+12)  python example.py
    
