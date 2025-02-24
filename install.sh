@@ -50,5 +50,5 @@ if [ -d "$DIR" ]; then
     cd "$DIR" && git pull
 else
     git clone https://github.com/mendableai/firecrawl.git && cp .env.firecrawl "$DIR/.env"
-    cd "$DIR"
+    exec cd firecrawl
 fi
