@@ -46,4 +46,9 @@ conda init --all
 conda create -n scrape2llm python=3.12 -y
 
 DIR="firecrawl"
-[ -d "$DIR" ] && (cd "$DIR" && git pull) || (git clone https://github.com/mendableai/firecrawl.git && cp .env.firecrawl $DIR/ && cd "$DIR")
+if [ -d "$DIR" ]; then
+    cd "$DIR" && git pull
+else
+    git clone https://github.com/mendableai/firecrawl.git && cp .env.firecrawl "$DIR/.env"
+    cd "$DIR"
+fi
