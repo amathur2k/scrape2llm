@@ -43,3 +43,9 @@ rm ~/miniconda3/miniconda.sh
 
 source ~/miniconda3/bin/activate
 conda init --all
+conda create -n scrape2llm python=3.12
+
+git clone https://github.com/mendableai/firecrawl.git
+cd firecrawl
+cp ../.env.firecrawl .env
+
