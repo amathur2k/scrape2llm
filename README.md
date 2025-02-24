@@ -1,27 +1,48 @@
-Setup
-1) Setup AWS Bedrock to get acess to model of choice
-2) Configure Bedrock APi Acesss :- https://github.com/aws-samples/bedrock-access-gateway
-3) Create an AWS EC2 Instance
- - Ubuntu
- - t2.small
- - 20GB Storage
+# Scrape2LLM Setup Guide
 
-4) On this Instance perform Installation
-   
+## Prerequisites
+1. AWS Bedrock access configured for your chosen model
+2. Bedrock API Gateway setup ([configuration guide](https://github.com/aws-samples/bedrock-access-gateway))
+
+## Infrastructure Setup
+
+### AWS EC2 Instance Requirements
+- OS: Ubuntu
+- Instance Type: t2.small
+- Storage: 20GB
+
+## Installation Steps
+
+1. Clone the repository:
+   ```bash
    git clone https://github.com/amathur2k/scrape2llm.git
-
    cd scrape2llm
+   ```
 
+2. Run the installation script:
+   ```bash
    source install.sh
+   ```
 
-6) edit the .env file to enter bedrock api access key and the bedrock api acess url 
-   
-Below command will take 5-10 minutes 
+3. Configure the environment:
+   - Edit the `.env` file
+   - Add your Bedrock API access key
+   - Add your Bedrock API access URL
 
-6)  docker compose up --build
+4. Build and start the Docker container:
+   ```bash
+   docker compose up --build
+   ```
+   > Note: This process may take 5-10 minutes to complete.
 
-7)  Open another terminal
-8)  cd scrape2llm
-9)  conda activate scrape2llm
-10) pip install -r requirements.txt  
-12)  python example.py
+5. In a new terminal window, set up the Python environment:
+   ```bash
+   cd ~/scrape2llm
+   conda activate scrape2llm
+   pip install -r requirements.txt
+   ```
+
+6. Run the example:
+   ```bash
+   python example.py
+   ```
