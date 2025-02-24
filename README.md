@@ -3,10 +3,10 @@ Setup
 2) Configure Bedrock APi Acesss :- https://github.com/aws-samples/bedrock-access-gateway
 3) Create an AWS EC2 Instance
  - Ubuntu
- - t2.medium
+ - t2.small
  - 20GB Storage
 
-4) On this Instance perform Installation (This will take 5-10 minutes) 
+4) On this Instance perform Installation 
    git clone https://github.com/amathur2k/scrape2llm.git
    cd scrape2llm
    source install.sh
@@ -14,7 +14,7 @@ Setup
 5) edit the .env file to enter bedrock api access key
    
 Below command will take 5-10 minutes
-7)  docker compose up --build
+6)  docker compose up --build
 
 8)  Open another terminal
 9)  cd scrape2llm
