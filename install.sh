@@ -28,10 +28,10 @@ sudo apt-get install -y docker-compose-plugin
 docker compose version
 
 # Add the current user to the 'docker' group to run Docker without 'sudo'
-sudo usermod -aG docker $USER
+#sudo usermod -aG docker $USER
 
 # Apply the new group membership
-newgrp docker
+#newgrp docker
 
 # Print success message
 echo "Docker and Docker Compose have been installed successfully."
