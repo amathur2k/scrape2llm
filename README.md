@@ -6,14 +6,16 @@ Setup
  - t2.small
  - 20GB Storage
 
-4) On this Instance perform Installation 
+4) On this Instance perform Installation
+   
    git clone https://github.com/amathur2k/scrape2llm.git
    cd scrape2llm
    source install.sh
 
 5) edit the .env file to enter bedrock api access key
    
-Below command will take 5-10 minutes
+Below command will take 5-10 minutes 
+
 6)  docker compose up --build
 
 7)  Open another terminal
