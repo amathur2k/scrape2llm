@@ -14,7 +14,7 @@ Setup
 
    source install.sh
 
-6) edit the .env file to enter bedrock api access key
+6) edit the .env file to enter bedrock api access key and the bedrock api acess url 
    
 Below command will take 5-10 minutes 
 
