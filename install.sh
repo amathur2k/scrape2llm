@@ -45,6 +45,5 @@ source ~/miniconda3/bin/activate
 conda init --all
 conda create -n scrape2llm python=3.12 -y
 
-git clone https://github.com/mendableai/firecrawl.git
-cd firecrawl
-cp ../.env.firecrawl .env
+DIR="firecrawl"
+[ -d "$DIR" ] && (cd "$DIR" && git pull) || (git clone https://github.com/mendableai/firecrawl.git && cp .env.firecrawl $DIR/ && cd "$DIR")
