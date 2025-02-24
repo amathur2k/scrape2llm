@@ -14,7 +14,7 @@ logging.basicConfig(
 POLLING_INTERVAL_SECONDS = 5  # Time to wait between status checks
 EC2_INSTANCE_PUBLIC_URL = None
 
-for url in ["http://localhost:3002", "http://ec2-35-90-90-3.us-west-2.compute.amazonaws.com:3002"]: 
+for url in ["http://localhost:3002", "http://ec2-35-93-14-194.us-west-2.compute.amazonaws.com:3002", "http://ec2-35-90-90-3.us-west-2.compute.amazonaws.com:3002"]: 
     try:
         response = requests.get(url, timeout=2)
         if response.status_code == 200:
