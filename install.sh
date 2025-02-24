@@ -28,7 +28,7 @@ sudo apt-get install -y docker-compose-plugin
 docker compose version
 
 # Add the current user to the 'docker' group to run Docker without 'sudo'
-#sudo usermod -aG docker $USER
+sudo usermod -aG docker $USER
 
 # Apply the new group membership
 #newgrp docker
@@ -52,3 +52,4 @@ else
     git clone https://github.com/mendableai/firecrawl.git && cp .env.firecrawl "$DIR/.env"
     cd firecrawl
 fi
+exec bash
