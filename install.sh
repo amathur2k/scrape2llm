@@ -27,11 +27,7 @@ sudo apt-get install -y docker-compose-plugin
 # Verify Docker Compose installation
 docker compose version
 
-# Add the current user to the 'docker' group to run Docker without 'sudo'
-sudo usermod -aG docker $USER
 
-# Apply the new group membership
-#newgrp docker
 
 # Print success message
 echo "Docker and Docker Compose have been installed successfully."
@@ -52,4 +48,8 @@ else
     git clone https://github.com/mendableai/firecrawl.git && cp .env.firecrawl "$DIR/.env"
     cd firecrawl
 fi
-exec bash
+# Add the current user to the 'docker' group to run Docker without 'sudo'
+sudo usermod -aG docker $USER
+
+# Apply the new group membership
+newgrp docker
