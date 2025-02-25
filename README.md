@@ -46,3 +46,9 @@
    ```bash
    python example.py
    ```
+
+## Architecture Details
+
+For detailed architecture information, please refer to the [Architecture Overview](./architecture.md) document.
+
+
